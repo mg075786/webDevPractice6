@@ -9,14 +9,113 @@
 <title>HTML Practice 6 - Tables</title>
 
 <style type="text/css">
+ div {
+   text-align: center;
+ }
 
+ .classschedule {
+   margin: auto; 
+   width: 550px;
+ }
+ 
+ .caption {
+   color: #003300
+ }
+ 
+ .pattern1 {
+   background-color: #CCCCCC;
+   width: 25%
+ }
+
+ .pattern2 {
+   background-color: #99FF66;
+ }
+
+ td{
+   border: solid 1px #000000; 
+   width: 15%;
+   border-spacing: 5px; 
+   border-collapse: separate;
+ }
+ 
+ th {
+   border: solid 1px #000000; 
+   width: 15%;
+   border-spacing: 5px; 
+   border-collapse: separate;
+   padding: 3px; 
+ }
+ table {
+   border: solid 1px #000000; 
+   border-spacing: 5px; 
+   border-collapse: separate;
+   padding: 3px; 
+ }
+ 
 
 </style>
 </head>
 <body>
 <div >
-   <table >
-	
+   <table class="classschedule">
+	<caption class="caption">My Class Schedule</caption>
+   <colgroup class="pattern1" span="1"></colgroup>
+   <tr>
+      <th>
+         Courses
+      </th>
+      <th class="pattern2">
+         Monday
+      </th>
+      <th class="pattern2">
+         Tuesday
+      </th>
+      <th class="pattern2">
+         Wednesday
+      </th>
+      <th class="pattern2">
+         Thursday
+      </th>
+      <th class="pattern2">
+         Friday
+      </th>
+   </tr>
+   <tr>
+      <th>
+         INFO 1120
+      </th>
+      <td> 
+         &nbsp; 
+      </td>
+      <td>
+         9-11
+      </td>
+      <td>
+         &nbsp;
+      </td>
+      <td>
+         9-11
+      </td>
+      <td rowspan="2">
+         &nbsp;
+      </td>
+   </tr>
+   <tr>
+      <th>
+         MATH 1010
+      </th>
+      <td colspan="4">
+         12-1
+      </td>
+   </tr>
+   <tr>
+     <th>
+      INFO 2420
+     </th> 
+     <td colspan="5">
+      Online Available 24/7
+     </td>
+   </tr>
    </table>
 </div>
 
